@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarTech - Placas Solares e Energia Limpa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+     Header Fixo 
+    <header class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-sun text-warning me-2"></i>
+                <span class="fw-bold">SolarTech</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Depoimentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quote">Orçamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" onclick="scrollToSection('quote')">
+                    Solicitar Orçamento
+                </button>
+            </div>
+        </div>
+    </header>
+
+     Hero Section 
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100 pt-5">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="badge bg-warning text-dark mb-3">Energia Limpa e Sustentável</span>
+                        <h1 class="display-4 fw-bold mb-4">
+                            Economize até <span class="text-warning">90%</span> na sua conta de luz
+                        </h1>
+                        <p class="lead mb-4">
+                            Instale placas solares com a melhor tecnologia do mercado. Garantia de 25 anos, 
+                            financiamento facilitado e suporte técnico especializado.
+                        </p>
+                        <div class="d-flex flex-column flex-sm-row gap-3">
+                            <button class="btn btn-primary btn-lg" onclick="scrollToSection('quote')">
+                                Solicitar Orçamento Grátis
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg" onclick="scrollToSection('about')">
+                                Saiba Mais
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image position-relative">
+                        <img src="modern-solar-panels.png" alt="Placas solares" class="img-fluid rounded shadow-lg">
+                        <div class="savings-badge position-absolute">
+                            <div class="h4 fw-bold mb-0">R$ 800+</div>
+                            <small>Economia mensal média</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Sobre Section 
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="placeholder-hdxr6.png" alt="Equipe SolarTech" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge bg-primary mb-3">Sobre a SolarTech</span>
+                    <h2 class="display-5 fw-bold mb-4">Líderes em energia solar no Brasil</h2>
+                    <p class="lead mb-4">
+                        Com mais de 10 anos de experiência, já instalamos mais de 5.000 sistemas solares 
+                        em residências e empresas. Nossa missão é democratizar o acesso à energia limpa e sustentável.
+                    </p>
+                    
+                    <div class="row text-center mb-4">
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="h3 fw-bold text-warning">5.000+</div>
+                            <small class="text-muted">Instalações</small>
+                        </div>
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="h3 fw-bold text-warning">25 anos</div>
+                            <small class="text-muted">Garantia</small>
+                        </div>
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="h3 fw-bold text-warning">98%</div>
+                            <small class="text-muted">Satisfação</small>
+                        </div>
+                        <div class="col-6 col-md-3 mb-3">
+                            <div class="h3 fw-bold text-warning">24/7</div>
+                            <small class="text-muted">Suporte</small>
+                        </div>
+                    </div>
+
+                    <div class="features-list">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt text-warning me-3"></i>
+                            <span>Equipamentos certificados pelo INMETRO</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-bolt text-warning me-3"></i>
+                            <span>Instalação profissional e segura</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-leaf text-warning me-3"></i>
+                            <span>Contribua para um planeta mais sustentável</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Depoimentos Section 
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark mb-3">Depoimentos</span>
+                <h2 class="display-5 fw-bold mb-3">O que nossos clientes dizem</h2>
+                <p class="lead">Mais de 5.000 famílias já economizam com energia solar</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card testimonial-card">
+                                    <div class="card-body text-center p-5">
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <blockquote class="blockquote mb-4">
+                                            <p>"Instalei placas solares há 6 meses e já economizei mais de R$ 800 na conta de luz. O atendimento foi excepcional!"</p>
+                                        </blockquote>
+                                        <div>
+                                            <h5 class="mb-1">Maria Silva</h5>
+                                            <small class="text-muted">São Paulo, SP</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card testimonial-card">
+                                    <div class="card-body text-center p-5">
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <blockquote class="blockquote mb-4">
+                                            <p>"Excelente qualidade dos equipamentos e instalação profissional. Recomendo para todos que querem economizar."</p>
+                                        </blockquote>
+                                        <div>
+                                            <h5 class="mb-1">João Santos</h5>
+                                            <small class="text-muted">Rio de Janeiro, RJ</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card testimonial-card">
+                                    <div class="card-body text-center p-5">
+                                        <div class="stars mb-3">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <blockquote class="blockquote mb-4">
+                                            <p>"O investimento se pagou em menos de 2 anos. Agora tenho energia limpa e economia garantida!"</p>
+                                        </blockquote>
+                                        <div>
+                                            <h5 class="mb-1">Ana Costa</h5>
+                                            <small class="text-muted">Belo Horizonte, MG</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Formulário de Orçamento 
+    <section id="quote" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-primary mb-3">Orçamento Gratuito</span>
+                <h2 class="display-5 fw-bold mb-3">Solicite seu orçamento personalizado</h2>
+                <p class="lead">Preencha o formulário e receba uma proposta sob medida para sua residência ou empresa</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <form id="quoteForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nome completo *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-mail *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="whatsapp" class="form-label">WhatsApp *</label>
+                                    <input type="tel" class="form-control" id="whatsapp" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensagem</label>
+                                    <textarea class="form-control" id="message" rows="4" placeholder="Conte-nos sobre seu projeto, consumo médio de energia, tipo de imóvel, etc."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 btn-lg">
+                                    Solicitar Orçamento Gratuito
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     FAQ Section 
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge bg-warning text-dark mb-3">Perguntas Frequentes</span>
+                <h2 class="display-5 fw-bold mb-3">Tire suas dúvidas sobre energia solar</h2>
+                <p class="lead">Respostas para as principais questões sobre instalação e funcionamento</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Quanto tempo dura uma placa solar?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    As placas solares têm garantia de 25 anos e podem durar até 30 anos ou mais com manutenção adequada.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Qual é o tempo de retorno do investimento?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Em média, o investimento em energia solar se paga entre 4 a 7 anos, dependendo do consumo e região.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Funciona em dias nublados?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! As placas solares funcionam mesmo em dias nublados, produzindo cerca de 10-25% da capacidade normal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Precisa de manutenção?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    A manutenção é mínima, apenas limpeza periódica e inspeção anual para garantir máxima eficiência.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Posso vender energia excedente?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! Através do sistema de compensação elétrica, você pode injetar energia na rede e receber créditos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Footer 
+    <footer class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-sun text-warning me-2 fs-3"></i>
+                        <span class="h4 mb-0">SolarTech</span>
+                    </div>
+                    <p class="mb-3">Transformando o futuro da energia com soluções solares sustentáveis e inovadoras.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Serviços</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Instalação Residencial</a></li>
+                        <li><a href="#" class="text-white-50">Instalação Comercial</a></li>
+                        <li><a href="#" class="text-white-50">Manutenção</a></li>
+                        <li><a href="#" class="text-white-50">Monitoramento</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Empresa</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Sobre Nós</a></li>
+                        <li><a href="#" class="text-white-50">Certificações</a></li>
+                        <li><a href="#" class="text-white-50">Parceiros</a></li>
+                        <li><a href="#" class="text-white-50">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5 class="mb-3">Contato</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone me-2"></i> (11) 9999-9999</p>
+                        <p><i class="fas fa-envelope me-2"></i> contato@solartech.com.br</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> São Paulo, SP</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 SolarTech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
